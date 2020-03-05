@@ -371,7 +371,8 @@ summary {
 
 <pre class="r"><code>iris%&gt;%
 ggplot(aes (x= Sepal.Length))+
-  geom_density()-&gt; github_plot
+  geom_density()+
+  labs(x= &quot;Spepal Length&quot;)-&gt; github_plot
 ggsave(&quot;practice_plot.png&quot;, github_plot)</code></pre>
 <pre><code>## Saving 7 x 5 in image</code></pre>
 
