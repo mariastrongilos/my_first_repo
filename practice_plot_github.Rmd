@@ -1,0 +1,21 @@
+---
+title: "Practice Plotting and Github"
+author: "Maria Strongilos"
+date: "3/5/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+```{r Github Plot}
+iris%>%
+ggplot(aes (x= Sepal.Length))+
+  geom_density()-> github_plot
+ggsave("practice_plot.png", github_plot)
+
+```
+
+
